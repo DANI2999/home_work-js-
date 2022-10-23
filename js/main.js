@@ -19,6 +19,10 @@ function chBg(){
     
   document.getElementById("main").style.animationName = "go";
 }
+function changeColor(){
+    var olchu = document.getElementById('color').value
+    document.getElementById("main").style.color =color
+}
 
 function aniStop(){
     
@@ -27,11 +31,13 @@ function aniStop(){
 
 function changeWidht(){
     var widht = document.getElementById('widht').value
-    var olchu = document.getElementById('olchu').value
-    document.getElementById("main").style.width = widht+olchu
+    var olchu = document.getElementById('size').value 
+    document.getElementById("main").style.width = widht+size
 }
 
 function changeWidhtDefault(){
-    document.getElementById("main").style.width = "150px"
+    document.getElementById("main").style.width = "500px"
 }
-
+function changeWidhtFrame(){
+document.getElementById(widht).style.width = "150px"
+}

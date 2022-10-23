@@ -1,14 +1,17 @@
+body{
+    background-color: aqua;
+}
 #main{
-    width: 150px;
-    height: 150px;
+    width: 5px;
+    height: 5px;
     float: left;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-    position: fixed;
-    top: 150px;
+    position: absolute;
+    top: 0px;
     animation-duration: 2s;
     background: red;
     animation-direction: alternate;
@@ -31,4 +34,15 @@
         top: 200px;
         left: 500px;
     }
+}
+.admin_panel{
+    width: 100px;
+    height: 600px;
+    background-color: rgb(30, 156, 87);
+    float: right;
+}
+.changer_size1{
+    float: left;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
 }
