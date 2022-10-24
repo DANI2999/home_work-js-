@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&amp;display=swap">    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="admin_panel">
-      <br>
-   <br>
-   <select name="" id="size"><option value="em">em</option>
+   <select name="" id="size">
         <option value="em">em</option>
         <option value="rem">rem</option>
         <option value="%">%</option>
@@ -19,16 +19,16 @@
     </select>  
     <br>
    <br>
-   <input type="text" id="widht" placeholder="write size" class="changer_size1" />
+   <input type="text" id="widht" placeholder="write size"  />
    <br>
    <br>
    <button type="button" onclick="changeWidht()">change width</button>
    <br>
    <br>
+   <input type="text" id="height" placeholder="write size"  />
+   <br>
+   <br>
    <button type="button" onclick="changeHeight()">change height</button>
-   <br>
-   <br>
-   <button type="button" onclick="changeRadius()">change radius</button>
    <br>
    <br>
     <select name="" id="color">
@@ -41,11 +41,11 @@
     </select>
     <br>
     <br>
-    <button id="click">change color</button>
+    <button type="button" onclick="changeColor()">change color</button>
     <br>
     <br>
     <button type="button" onclick="changeWidhtDefault()">
-      standart width 500px
+      standart width 50px
     </button>
     <br />
     <br />
@@ -59,6 +59,28 @@
     
   </div>
   <div id="main"></div>
+  <div class="container">
+    <div class="switch">
+      <div class="toggle-button">
+        <div class="toggle"></div>
+        <div class="moon-mask"></div>
+        <div class="circles-wrapper">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <p>on</p>
+      <p>off</p>
+    </div>
+  </div> 
   </body>
 </html>
 <script src="js/main.js"></script>
