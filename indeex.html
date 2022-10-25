@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&amp;display=swap">    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+             <div id="main"></div>    
+
+                 <div id="navibarius">
+                     <div id="open" onclick="open_div()" ondblclick="close_div()">
+                       setting <i class="fa-solid fa-gear"></i>
+                    </div>
+                     <label for="w">width  
+                     <select name=""  class="size_control">
+                        <option value="em">em</option>
+                        <option value="rem">rem</option>
+                        <option value="%">%</option>
+                        <option value="px">px</option>
+                     </label>
+                        <br>
+                        <br>
+                        <input type="text" id="widht" placeholder="write size"/>
+                     <br>
+                     <br>
+                     <button type="button" onclick="changeWidht()" style="width: 209px;">change width</button>
+                     <br>
+                     <br>
+                     <br>
+
+                     <label for="h">height                
+                     <select name="" id="size" class="size_control">
+                     <option value="em">em</option>
+                     <option value="rem">rem</option>
+                     <option value="%">%</option>
+                     <option value="px">px</option>
+                     </select>  </label>
+                     <input type="text" id="height" width="50px" placeholder="write size"  />
+                     <br>
+                     <br>
+                     <button type="button" onclick="changeHeight()" style="width: 209px;">change height</button>
+                     <br>
+                     <br>
+                     <br>
+                     <label for="c" style="width: 107px;">color
+                     <select name="" id="color">
+                        <option value="red">red</option>
+                        <option value="black">black</option>
+                        <option value="yellow">yellow</option>
+                        <option value="orange">orange</option>
+                        <option value="blue">blue</option>
+                        <option value="grey">grey</option>
+                     </select>
+                     </label>
+                     <button type="button" onclick="changeColor()">change color</button>
+                     <br>
+                     <br>
+                     <button type="button" onclick="changeWidhtDefault()" class="input_w">
+                     standart width 50px
+                      </button>
+                     <br />
+                     <br>
+                     <button type="button" onclick="chBg()" class="input_w">Start animation</button>
+                     <br>
+                     <br>
+                     <button type="button" onclick="aniStop()" class="input_w">stop animation</button>
+                     <br />
+                     <div class="container" >
+                        <div class="switch">
+                          <div class="toggle-button">
+                            <div class="toggle"></div>
+                            <div class="moon-mask"></div>
+                            <div class="circles-wrapper">
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text">
+                          light
+                        </div>
+                      </div> 
+                    </div>
+
+
+            </div>
+     </div>
+    
+</body>
+</html>
+
+
+<script>
+
+    function open_div(){
+        document.getElementById("navibarius").style.right = "0px"
+    }
+
+    function close_div(){
+        document.getElementById("navibarius").style.right = "-250px"
+    }
+
+</script> 
+<script src="js/script.js"></script>
